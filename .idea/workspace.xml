@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9404280-2297-48e9-bf7c-f25f31aa839a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DropdownPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EmailSentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HorizontalSliderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HoverPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/AlertsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dropdown/DropdownTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/forgotpassword/ForgotPasswordTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hover/HoverTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keys/KeysTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/login/LoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slider/SliderTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +60,80 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nbaynham\Documents\testautomation\resources" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BaseTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="base.BaseTests" />
+  <component name="RunManager" selected="TestNG.AlertsTest">
+    <configuration name="AlertsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testautomation" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertsTest.testAlerts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testautomation" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTest" />
+      <option name="METHOD_NAME" value="testAlerts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertsTest.testConfirm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testautomation" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTest" />
+      <option name="METHOD_NAME" value="testConfirm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertsTest.testPrompt" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testautomation" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTest" />
+      <option name="METHOD_NAME" value="testPrompt" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SliderTests.testSliderChange" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testautomation" />
+      <option name="PACKAGE_NAME" value="slider" />
+      <option name="MAIN_CLASS_NAME" value="slider.SliderTests" />
+      <option name="METHOD_NAME" value="testSliderChange" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BaseTests" />
+        <item itemvalue="TestNG.AlertsTest" />
+        <item itemvalue="TestNG.AlertsTest.testPrompt" />
+        <item itemvalue="TestNG.AlertsTest.testConfirm" />
+        <item itemvalue="TestNG.AlertsTest.testAlerts" />
+        <item itemvalue="TestNG.SliderTests.testSliderChange" />
       </list>
     </recent_temporary>
   </component>
@@ -84,22 +160,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1575730032453">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1575756644653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575730032453" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1575730032452">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575756644653" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1575756644653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575730032452" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1575730032452">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575756644653" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1575756644653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575730032452" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1575730032453">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575756644653" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1575756644653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575730032453" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575756644653" />
     <state width="1493" height="252" key="GridCell.Tab.1.bottom" timestamp="1575729725048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
