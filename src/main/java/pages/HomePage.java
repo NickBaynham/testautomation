@@ -8,7 +8,6 @@ public class HomePage {
     private WebDriver driver;
     private By linkFormAuthentication = By.linkText("Form Authentication");
     private By linkDropdown = By.linkText("Dropdown");
-
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
@@ -47,6 +46,35 @@ public class HomePage {
         return new AlertsPage(driver);
     }
 
+    public FileUploadPage clickFileUpload() {
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
+    public ContextPage clickContextMenu() {
+        clickLink("Context Menu");
+        return new ContextPage(driver);
+    }
+
+    public WysiwygEditorPage clickWysiwygEditor() {
+        clickLink("WYSIWYG Editor");
+        return new WysiwygEditorPage(driver);
+    }
+
+    public DynamicLoadingPage clickDynamicLoading(){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
+
+    public LargeAndDeepDomPage clickLargeAndDeepDom() {
+        clickLink("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
+
+    public MultipleWindowsPage clickMultipleWindows() {
+        clickLink("Multiple Windows");
+        return new MultipleWindowsPage(driver);
+    }
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }

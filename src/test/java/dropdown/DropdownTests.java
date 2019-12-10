@@ -1,13 +1,13 @@
 package dropdown;
 
 import base.BaseTests;
+import base.ParallelTests;
 import org.testng.annotations.Test;
-import pages.DropdownPage;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class DropdownTests extends BaseTests {
+public class DropdownTests extends ParallelTests {
 
     @Test
     public void testDropdownSelectOption() {
