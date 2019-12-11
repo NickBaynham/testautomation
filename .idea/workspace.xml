@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9404280-2297-48e9-bf7c-f25f31aa839a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ContextPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicallyLoadedElementsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LargeAndDeepDomPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MultipleWindowsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/WysiwygEditorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/CapabilityFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/EventReporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/OptionsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/WindowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/FileUploadTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/ParallelTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/context/ContextTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/frames/FrameTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/javascript/JavaScriptTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/navigation/NavigationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/waits/ExplicitWaitTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/crossbrowser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/crossbrowser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dropdown/DropdownTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dropdown/DropdownTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/OptionsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/OptionsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/ParallelTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/ParallelTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,17 +44,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nbaynham\Documents\testautomation\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pages" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nbaynham\Documents\testautomation\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/nbaynham/Documents/testautomation/resources/parallel.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/nbaynham/Documents/testautomation/resources/crossbrowser.xml">
+    <configuration name="C:/Users/nbaynham/Documents/testautomation/resources/crossbrowser.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testautomation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/resources/crossbrowser.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/nbaynham/Documents/testautomation/resources/parallel.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testautomation" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/resources/parallel.xml" />
@@ -109,18 +99,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationTests.testNavigation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testautomation" />
-      <option name="PACKAGE_NAME" value="navigation" />
-      <option name="MAIN_CLASS_NAME" value="navigation.NavigationTests" />
-      <option name="METHOD_NAME" value="testNavigation" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testautomation" />
       <option name="PACKAGE_NAME" value="login" />
@@ -133,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/nbaynham/Documents/testautomation/resources/crossbrowser.xml" />
         <item itemvalue="TestNG.C:/Users/nbaynham/Documents/testautomation/resources/parallel.xml" />
         <item itemvalue="TestNG.DropdownTests.testDropdownSelectOption" />
         <item itemvalue="TestNG.login" />
         <item itemvalue="TestNG.NavigationTests.testMultipleWindows" />
-        <item itemvalue="TestNG.NavigationTests.testNavigation" />
       </list>
     </recent_temporary>
   </component>
@@ -172,49 +150,61 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="450" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1575820840135" />
-    <state width="1877" height="203" key="GridCell.Tab.0.bottom" timestamp="1575986252989">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1576026041653">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="203" key="GridCell.Tab.0.bottom/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575986252989" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575943515751" />
-    <state width="1877" height="203" key="GridCell.Tab.0.center" timestamp="1575986252988">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="337" key="GridCell.Tab.0.bottom/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524195" />
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576026041653" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1576026041653">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="203" key="GridCell.Tab.0.center/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575986252988" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575943515751" />
-    <state width="1877" height="203" key="GridCell.Tab.0.left" timestamp="1575986252988">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="337" key="GridCell.Tab.0.center/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524195" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576026041653" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1576026041653">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="203" key="GridCell.Tab.0.left/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575986252988" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575943515750" />
-    <state width="1877" height="203" key="GridCell.Tab.0.right" timestamp="1575986252988">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="337" key="GridCell.Tab.0.left/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524195" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576026041653" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1576026041653">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="203" key="GridCell.Tab.0.right/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575986252988" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575943515751" />
-    <state width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1575985549602">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="337" key="GridCell.Tab.0.right/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524195" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576026041653" />
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1575993524196">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="337" key="GridCell.Tab.1.bottom/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575985549602" />
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524196" />
     <state width="1493" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575839441558" />
-    <state width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1575985549601">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1575993524196">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="337" key="GridCell.Tab.1.center/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575985549601" />
+    <state width="1877" height="337" key="GridCell.Tab.1.center/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524196" />
     <state width="1493" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575839441558" />
-    <state width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1575985549601">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1575993524196">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="337" key="GridCell.Tab.1.left/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575985549601" />
+    <state width="1877" height="337" key="GridCell.Tab.1.left/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524196" />
     <state width="1493" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575839441558" />
-    <state width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1575985549601">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1575993524196">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="337" key="GridCell.Tab.1.right/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1575985549601" />
+    <state width="1877" height="337" key="GridCell.Tab.1.right/-5760.-473.1536.848/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575993524196" />
     <state width="1493" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575839441558" />
     <state x="300" y="70" key="Maven.ArtifactSearchDialog" timestamp="1575941571639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="300" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1575941571639" />
+    <state x="479" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1576026852433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="479" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576026852433" />
   </component>
 </project>
