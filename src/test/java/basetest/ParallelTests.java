@@ -1,4 +1,4 @@
-package base;
+package basetest;
 
 import com.google.common.io.Files;
 import org.openqa.selenium.*;
@@ -46,7 +46,7 @@ public class ParallelTests {
     @AfterMethod
     public void recordFailure(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
-            var camera = (TakesScreenshot) driver;
+            TakesScreenshot camera = (TakesScreenshot) driver;
             File screenshot = camera.getScreenshotAs(OutputType.FILE);
             try {
                 Files.move(screenshot, new File("resources/screenshots/" + result.getName() + ".png"));

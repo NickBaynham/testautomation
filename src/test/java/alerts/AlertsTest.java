@@ -1,7 +1,8 @@
 package alerts;
 
-import base.BaseTests;
+import basetest.BaseTests;
 import org.testng.annotations.Test;
+import pages.AlertsPage;
 
 import static org.testng.Assert.assertEquals;
 
@@ -9,7 +10,7 @@ public class AlertsTest extends BaseTests {
 
     @Test
     public void testAlerts() {
-        var alertsPage = homePage.clickJavaScriptAlerts();
+        AlertsPage alertsPage = homePage.clickJavaScriptAlerts();
         alertsPage.clickButtonJSAlert();
         alertsPage.acceptAlert();
         assertEquals(alertsPage.getResultText(), "You successfuly clicked an alert");
@@ -17,7 +18,7 @@ public class AlertsTest extends BaseTests {
 
     @Test
     public void testConfirm() {
-        var alertsPage = homePage.clickJavaScriptAlerts();
+        AlertsPage alertsPage = homePage.clickJavaScriptAlerts();
         alertsPage.clickButtonJSConfirm();
         String text = alertsPage.getAlertText();
         assertEquals(text, "I am a JS Confirm");
@@ -27,7 +28,7 @@ public class AlertsTest extends BaseTests {
 
     @Test
     public void testPrompt() {
-        var alertsPage = homePage.clickJavaScriptAlerts();
+        AlertsPage alertsPage = homePage.clickJavaScriptAlerts();
         alertsPage.clickButtonJSPrompt();
         alertsPage.enterAlertText("hello Scott!");
         alertsPage.acceptAlert();

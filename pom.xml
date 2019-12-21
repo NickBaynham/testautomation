@@ -2,18 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>testautomation</groupId>
     <artifactId>webdriver-java</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.target>1.12</maven.compiler.target>
-        <maven.compiler.source>1.12</maven.compiler.source>
-        <java.version>1.12</java.version>
+        <java.version>1.8</java.version>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
         <selenium.version>3.141.59</selenium.version>
         <testng.version>7.0.0</testng.version>
         <maven.compiler.version>3.7.0</maven.compiler.version>
+        <maven.surefire.version>3.0.0-M3</maven.surefire.version>
     </properties>
 
     <dependencies>
@@ -38,7 +40,28 @@
             <version>${testng.version}</version>
         </dependency>
     </dependencies>
+
     <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven.surefire.version}</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>resources/test.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>parallel</id>
             <build>
@@ -46,10 +69,10 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.0.0-M3</version>
+                        <version>${maven.surefire.version}</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>parallel.xml</suiteXmlFile>
+                                <suiteXmlFile>resources/parallel.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -63,10 +86,10 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.0.0-M3</version>
+                        <version>${maven.surefire.version}</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>crossbrowser.xml</suiteXmlFile>
+                                <suiteXmlFile>resources/crossbrowser.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>

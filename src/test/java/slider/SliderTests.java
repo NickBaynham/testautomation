@@ -1,6 +1,6 @@
 package slider;
 
-import base.BaseTests;
+import basetest.BaseTests;
 import org.testng.annotations.Test;
 import pages.HorizontalSliderPage;
 
@@ -10,7 +10,7 @@ public class SliderTests extends BaseTests {
 
     @Test
     public void testSliderChange() {
-        var horizontalSliderPage = homePage.clickHorizontalSlider();
+        HorizontalSliderPage horizontalSliderPage = homePage.clickHorizontalSlider();
         horizontalSliderPage.moveSlider(8);
         assertEquals(horizontalSliderPage.getRange(), 5);
     }

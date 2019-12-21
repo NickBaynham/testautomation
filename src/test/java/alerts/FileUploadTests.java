@@ -1,7 +1,8 @@
 package alerts;
 
-import base.BaseTests;
+import basetest.BaseTests;
 import org.testng.annotations.Test;
+import pages.FileUploadPage;
 
 import static org.testng.Assert.assertEquals;
 
@@ -9,7 +10,7 @@ public class FileUploadTests extends BaseTests {
 
     @Test
     public void testFileUpload() {
-        var fileUploadPage = homePage.clickFileUpload();
+        FileUploadPage fileUploadPage = homePage.clickFileUpload();
         fileUploadPage.uploadFile("C:\\Users\\nbaynham\\Documents\\testautomation\\resources\\chromedriver.exe");
         assertEquals(fileUploadPage.getUploadedFiles(), "chromedriver.exe");
     }

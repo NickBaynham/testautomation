@@ -1,6 +1,6 @@
 package login;
 
-import base.BaseTests;
+import basetest.BaseTests;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.SecureAreaPage;

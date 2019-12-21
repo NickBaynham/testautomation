@@ -1,4 +1,4 @@
-package base;
+package basetest;
 
 import com.google.common.io.Files;
 import org.openqa.selenium.*;
@@ -17,7 +17,7 @@ import java.util.List;
 
 public class BaseTests {
     private EventFiringWebDriver driver;
-    protected HomePage homePage;
+    public HomePage homePage;
 
     @BeforeClass
     public void setUp() {
@@ -99,7 +99,7 @@ public class BaseTests {
     @AfterMethod
     public void recordFailure(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
-            var camera = (TakesScreenshot) driver;
+            TakesScreenshot camera = (TakesScreenshot) driver;
             File screenshot = camera.getScreenshotAs(OutputType.FILE);
             try {
                 Files.move(screenshot, new File("resources/screenshots/" + result.getName() + ".png"));

@@ -2,6 +2,8 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.Set;
+
 public class WindowManager {
     private WebDriver driver;
     private WebDriver.Navigation navigate;
@@ -28,7 +30,7 @@ public class WindowManager {
     }
 
     public void switchToTab(String titleOfTab) {
-        var windows = driver.getWindowHandles();
+        Set<String> windows = driver.getWindowHandles();
         System.out.println("Open Windows: " + windows.size());
         System.out.println("Windows handles: ");
         windows.forEach(System.out::println);

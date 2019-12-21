@@ -1,6 +1,6 @@
 package hover;
 
-import base.BaseTests;
+import basetest.BaseTests;
 import org.testng.annotations.Test;
 import pages.HoverPage;
 
@@ -11,8 +11,8 @@ public class HoverTests extends BaseTests {
 
     @Test
     public void testHover() {
-        var hoverPage = homePage.clickHovers();
-        var figureCaption = hoverPage.hoverOnFigure(0);
+        HoverPage hoverPage = homePage.clickHovers();
+        HoverPage.FigureCaption figureCaption = hoverPage.hoverOnFigure(0);
         assertTrue(figureCaption.isCaptionDisplayed());
         assertEquals(figureCaption.getLinkText(), "View profile");
         assertEquals(figureCaption.getTitle(), "name: user1");
