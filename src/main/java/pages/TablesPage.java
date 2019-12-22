@@ -13,7 +13,7 @@ import java.util.Map;
 public class TablesPage {
     private WebDriver driver;
 
-    private By table = By.xpath("(//h3[text()='Example'])[1]");
+    private By table = By.xpath("(//h3[text()='Example'])[1]//..//table");
 
     public TablesPage(WebDriver driver) {
         this.driver = driver;
@@ -31,16 +31,18 @@ public class TablesPage {
         for (WebElement row : rows) {
             List<String> rowData = new ArrayList<>();
             List<WebElement> columns = row.findElements(By.tagName("td"));
-            for (WebElement column: columns) {
-                String cellValue = column.getText();
-                rowData.add(cellValue);
+            if (columns.size() > 0) {
+                for (WebElement column: columns) {
+                    String cellValue = column.getText();
+                    rowData.add(cellValue);
+                }
+                // add a row as a map
+                Map<String,String> nextRow = new HashMap<>();
+                for (int i = 0; i < headers.size(); i++) {
+                    nextRow.put(headers.get(i), rowData.get(i));
+                }
+                data.add(nextRow);
             }
-            // add a row as a map
-            Map<String,String> nextRow = new HashMap<>();
-            for (int i = 0; i < headers.size(); i++) {
-                nextRow.put(headers.get(i), rowData.get(i));
-            }
-            data.add(nextRow);
         }
         return data;
     }
