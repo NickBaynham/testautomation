@@ -2,7 +2,6 @@ package tables;
 
 import basetest.W3SchoolsTests;
 import org.testng.annotations.Test;
-import pages.TablesPage;
 
 import static org.testng.Assert.assertEquals;
 
