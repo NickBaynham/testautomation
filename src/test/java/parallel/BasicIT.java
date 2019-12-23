@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
+
 public class BasicIT extends DriverBase {
 
     private ExpectedCondition<Boolean> pageTitleStartsWith(final
@@ -20,7 +22,7 @@ public class BasicIT extends DriverBase {
     }
 
     private void googleExampleThatSearchesFor(final String
-                                                      searchString) {
+                                                      searchString) throws MalformedURLException {
 
         WebDriver driver = DriverBase.getDriver();
 
@@ -42,12 +44,12 @@ public class BasicIT extends DriverBase {
     }
 
     @Test
-    public void googleCheeseExample() {
+    public void googleCheeseExample() throws MalformedURLException {
         googleExampleThatSearchesFor("Cheese!");
     }
 
     @Test
-    public void googleMilkExample() {
+    public void googleMilkExample() throws MalformedURLException {
         googleExampleThatSearchesFor("Milk!");
     }
 }

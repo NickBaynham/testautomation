@@ -6,6 +6,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import utils.DriverFactory;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -26,12 +27,12 @@ public class DriverBase {
         };
     }
 
-    public static RemoteWebDriver getDriver() {
+    public static RemoteWebDriver getDriver() throws MalformedURLException {
         return driverThread.get().getDriver();
     }
 
     @AfterMethod(alwaysRun = true)
-    public static void clearCookies() {
+    public static void clearCookies() throws MalformedURLException {
         getDriver().manage().deleteAllCookies();
     }
 
