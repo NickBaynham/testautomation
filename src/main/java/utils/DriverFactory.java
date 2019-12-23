@@ -15,6 +15,7 @@ public class DriverFactory {
             System.out.println("Current Architecture: " + systemArchitecture);
             System.out.println("Current Browser Selection: Firefox");
             System.out.println(" ");
+            System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
             driver = new ChromeDriver();
         }
         return driver;
