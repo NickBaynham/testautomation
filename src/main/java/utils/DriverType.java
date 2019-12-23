@@ -16,7 +16,7 @@ import org.openqa.selenium.safari.SafariOptions;
 
 import java.util.HashMap;
 
-public enum DriverType {
+public enum DriverType implements DriverSetup {
     FIREFOX {
         public RemoteWebDriver
         getWebDriverObject(DesiredCapabilities
