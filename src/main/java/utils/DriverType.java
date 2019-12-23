@@ -22,6 +22,7 @@ public enum DriverType implements DriverSetup {
         getWebDriverObject(DesiredCapabilities
                                    capabilities) {
             FirefoxOptions options = new FirefoxOptions();
+            options.setHeadless(HEADLESS);
             options.merge(capabilities);
 
             return new FirefoxDriver(options);
@@ -39,6 +40,7 @@ public enum DriverType implements DriverSetup {
                     ,false);
 
             ChromeOptions options = new ChromeOptions();
+            options.setHeadless(HEADLESS);
             options.merge(capabilities);
             options.addArguments("--no-default-browser-check");
             options.setExperimentalOption("prefs",
@@ -88,5 +90,6 @@ public enum DriverType implements DriverSetup {
 
             return new OperaDriver(options);
         }
-    }
+    };
+    public final static boolean HEADLESS = Boolean.getBoolean("headless");
 }

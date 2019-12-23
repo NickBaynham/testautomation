@@ -25,6 +25,7 @@
         <threads>1</threads>
         <browser>chrome</browser>
         <overwrite.binaries>false</overwrite.binaries>
+        <headless>true</headless>
     </properties>
 
     <dependencies>
@@ -162,11 +163,12 @@
                             <threadCount>${threads}</threadCount>
                             <systemPropertyVariables>
                                 <browser>${browser}</browser>
-                                <webdriver.chrome.driver>${selenium.version}</webdriver.chrome.driver>
-                                <webdriver.ie.driver>${selenium.version}</webdriver.ie.driver>
-                                <webdriver.opera.driver>${selenium.version}</webdriver.opera.driver>
-                                <webdriver.gecko.driver>${selenium.version}</webdriver.gecko.driver>
-                                <webdriver.edge.driver>${selenium.version}</webdriver.edge.driver>
+                                <headless>${headless}</headless>
+                                <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
+                                <webdriver.ie.driver>${webdriver.ie.driver}</webdriver.ie.driver>
+                                <webdriver.opera.driver>${webdriver.opera.driver}</webdriver.opera.driver>
+                                <webdriver.gecko.driver>${webdriver.gecko.driver}</webdriver.gecko.driver>
+                                <webdriver.edge.driver>${webdriver.edge.driver}</webdriver.edge.driver>
                             </systemPropertyVariables>
                         </configuration>
                         <executions>
