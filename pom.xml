@@ -7,8 +7,12 @@
     <groupId>testautomation</groupId>
     <artifactId>webdriver-java</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Nick Baynham</name>
+    <description>Selenium-Webdriver 3.0 Framework</description>
+    <url>http://www.NickBaynham.net</url>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -16,6 +20,8 @@
         <testng.version>7.0.0</testng.version>
         <maven.compiler.version>3.7.0</maven.compiler.version>
         <maven.surefire.version>3.0.0-M3</maven.surefire.version>
+        <maven.failsafe.version>3.0.0-M4</maven.failsafe.version>
+        <threads>1</threads>
     </properties>
 
     <dependencies>
