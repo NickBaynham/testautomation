@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Only Tables Class">
+    <test verbose="2" preserve-order="true" name="Table Tests">
+        <classes>
+            <class name="tables.TablesTests"/>
+        </classes>
+
+    </test>
+</suite>

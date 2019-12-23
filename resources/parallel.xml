@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests" >
+    <test name="context.ContextTests" parallel="methods" thread-count="5">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="context.ContextTests">
+                <methods>
+                    <include name="testContextMenu" />
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Context Tests -->
+    <test name="dropdown.DropdownTests"  parallel="methods" thread-count="5">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="dropdown.DropdownTests">
+                <methods>
+                    <include name="testDropdownSelectOption" />
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Dropdown Test -->
+</suite> <!-- Suite -->
